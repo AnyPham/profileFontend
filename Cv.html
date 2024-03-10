@@ -3,25 +3,882 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport " content="width = device-width , initial-scale=1">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Curriculum Vitae</title>
 
+    <!--overview-->
     <style>
+        body{
+            background-color: #dcd9d9;
+            font-family:Helvetica ;
+        }
+
+        .container {
+            background-color: white;
+            width: 1120px;
+            max-width: 100%;
+            margin: auto;
+            box-shadow: 1px 10px 550px #858585;
+        }
         
+    </style>
+    <!--header-->
+    <style>
+        .header{
+            display: flex;
+            height: 200px;
+            background-image: url(https://c.wallhere.com/photos/a1/6f/landscape_nature_starry_night_Moon_lake_reflection_Glacier_National_Park_Montana-110533.jpg!d);
+            background-size: cover ;
+            background-repeat: no-repeat;
+
+        }
+
+        .header_name{
+            width: 250px;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .avatar img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+        .avatar{
+            justify-content: center;
+            margin: 20px 20px 10px 20px ;
+
+        }
+
+        .header_contact{
+            width: 250px;
+        }
+
+        .title_contact{
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .inf_title_contact{
+            color: white;
+            list-style: none;
+            margin-left: -40px;
+        }
+        .contact_line{
+            margin: 12px 1px 12px 1px;
+            font-size: 0.8em;
+        }
+
+        .header_follow{
+            width: 220px;
+        }
+
+        .title_follow{
+            color: white;
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .header_icon_follow{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 18px 40px 0px 40px;
+        }
+
+        .header_icon_follow-facebook{
+            color: white;
+            border: 2px solid white;
+            border-radius: 3px;
+            font-size: 1.4rem;
+            height: 30px;
+            width: 30px;
+
+        }
+
+        .header_icon_follow-instagram{
+            color: white;
+            border: 2px solid white;
+            border-radius: 3px;
+            font-size: 1.4rem;
+            height: 30px;
+            width: 30px;
+        }
+
+        .header_icon_follow-tiktok{
+            color: white;
+            border: 2px solid white;
+            border-radius: 3px;
+            font-size: 1.4rem;
+            height: 30px;
+            width: 30px;
+        }
+
+        .header_visit{
+           width:  250px;
+        }
+        .header_icon_visit{
+            justify-content: center;
+            align-items: center;
+            margin: 40px 20px 8px 80px;
+        }
+        .header_visit_icon-github{
+            color: white;
+            font-size: 4em;
+        }
+
+    </style>
+    <!--body-->
+    <style>
+        .body_design{
+            display: flex;
+        }
+        .body_left_design{
+
+        }
+        .body_right_design{
+
+        }
+
+    </style>
+    <!--infomation-->
+    <style>
+        .infomation{
+                width: 500px;
+                margin: 10px 10px 10px 35px;
+                border: solid 2px #C3C3C3FF  ;
+                border-radius: 3px;
+                padding: 5px 5px 25px 10px ;
+
+        }
+        .inf_a{
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 20px 0 10px -20px;
+            color: white;
+            -webkit-text-stroke: 2px #D58F15FF;
+        }
+
+        .inf_b{
+            margin: 0px 20px 15px 20px;
+            font-size: 15px;
+
+        }
+        .inf_c{
+            margin: -20px 20px 15px 20px;
+            font-size: 15px;
+
+        }
+
 
 
 
     </style>
+    <!--specialties-->
+    <style>
+        .My_specialties{
+            width: 500px;
+            margin: 10px 10px 10px 35px;
+            border: solid 2px #C3C3C3FF  ;
+            border-radius: 3px;
+            padding: 5px 5px 88px 10px ;
+        }
+        .line{
+            width: 150px;
+            border: solid 1px #C3C3C3FF  ;
+
+        }
+
+        .My_specialties_icon{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .icon_image{
+            border-radius: 50%;
+            border: 1px solid #D58F15FF ;
+            width: 129.166666667px;
+            height: 129.166666667px;
+        }
+        .java{
+            flex-basis: 20%;
+            margin-top: 40px;
+        }
+        .html{
+            flex-basis: 20%;
+            margin-top: 40px;
+        }
+
+        .nodejs{
+            flex-basis: 20%;
+            margin-top: 40px;
+        }
+
+        .icon_image_java{
+            color: #D58F15FF ;
+            font-size: 5em;
+            margin: 20px 25px 30px 34px ;
+        }
+        .icon_image_html{
+            color: #D58F15FF ;
+            font-size: 5em;
+            margin: 20px 25px 30px 34px ;
+        }
+        .icon_image_nodejs{
+            color: #D58F15FF ;
+            font-size: 5em;
+            margin: 25px 20px 25px 20px ;
+
+        }
+        .line_icon{
+            height: 30px;
+            width: 0px;
+            border: 1px solid #D58F15FF;
+            margin: 10px 0 5px  65px;
+        }
+
+
+    </style>
+
+    <!--education-->
+    <style>
+        .education{
+            width: 500px;
+            margin: 10px 30px 10px 5px;
+            border: solid 2px #C3C3C3FF  ;
+            border-radius: 3px;
+            padding: 5px 5px 25px 10px
+        }
+
+        .education_text{
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .address{
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        .line_decor{
+            width: 0px;
+            height: 40px;
+            border: 2px solid #D58F15FF ;
+            margin: 0px 10px 0px -15px ;
+        }
+        .education_text_line{
+            display: flex;
+        }
+
+
+
+    </style>
+    <!--creative-and-software-skills -->
+    <style>
+        .creative_and_software_skills{
+            width: 1000px;
+            display: flex;
+            border: solid 2px #C3C3C3FF ;
+            margin: 0px 0px 0px 35px ;
+            padding: 0px 49px 0px 0px ;
+            border-radius: 2px;
+
+        }
+
+    </style>
+    <!--creative-skills-->
+    <style>
+        .line_skills{
+            width: 220px;
+            border: 2px solid #C3C3C3FF ;
+        }
+        .creative_body{
+            display: flex;
+            width: 480px;
+            justify-content: space-evenly;
+            margin-left: -20px;
+        }
+
+        .list_text_1{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            list-style: none;
+            margin-left: -115px;
+        }
+
+        .list_text_2{
+            display: flex;
+            list-style: none;
+            margin-left: -115px;
+            padding: 0px 0px 0px 0px;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .skills_list{
+            margin: 62px 0px 32px 0px;
+            justify-content: space-between;
+            font-weight: 300;
+
+        }
+
+        .body_letf_build_skills{
+
+            margin: 40px -70px 0 30px;
+
+
+        }
+        .line_x_top{
+            width: 20px;
+            border: 2px solid #C3C3C3FF;
+
+        }
+
+        .line_y_top{
+            width: 0px;
+            height: 20px;
+            border: 2px solid #C3C3C3FF;
+
+
+        }
+
+        .text1{
+            rotate: -90deg;
+            margin: 60px 70px 0px -80px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #D58F15FF    ;
+            width: 160px;
+        }
+        .line_x_under{
+            width: 20px;
+            height: 0px;
+            border: 2px solid #C3C3C3FF;
+            /*margin-right: 80px;*/
+            margin-top: 120px;
+
+        }
+        .line_y_under{
+            width: 0px;
+            height: 20px;
+            border: 2px solid #C3C3C3FF ;
+            margin-top: -24px;
+
+        }
+        .body_right_build_skills{
+            margin: 40px -30px 0 -10px;
+        }
+        .line_x_top1{
+            width: 20px;
+            border: 2px solid #C3C3C3FF;
+
+        }
+        .line_y_top1{
+            width: 0px;
+            height: 20px;
+            border: 2px solid #C3C3C3FF;
+
+        }
+         .text2{
+             rotate: -90deg;
+             margin: 60px 70px 0px -80px;
+             font-size: 0.9rem;
+             font-weight: bold;
+             color: #D58F15FF;
+             width: 160px;
+
+         }
+         .line_x_under1{
+             width: 20px;
+             height: 0px;
+             border: 2px solid #C3C3C3FF;
+             /*margin-right: 80px;*/
+             margin-top: 120px;
+
+         }
+         .line_y_under1{
+             width: 0px;
+             height: 20px;
+             border: 2px solid #C3C3C3FF ;
+             margin-top: -24px;
+         }
+
+    </style>
+
+
+
+    <!--softwave-skills-->
+    <style>
+        .software{
+            width: 550px;
+            margin-left: 100px;
+        }
+
+        .software_body{
+
+
+
+        }
+        .logo_app img{
+            margin: 20px 20px 20px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 50px;
+            height: 50px;
+            border-radius: 2px;
+            object-fit: cover;
+
+        }
+        .line_skills1{
+            width: 220px;
+            border: 2px solid #C3C3C3FF ;
+
+        }
+
+        .text_App{
+            font-weight: bold;
+            margin-right: 40px;
+
+        }
+        .app_img{
+            display: flex;
+            width: 450px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .point{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <!--hobbies & internet-->
+    <style>
+        .hobbies_internet{
+            width: 1035px;
+            margin: 10px 10px 10px 35px;
+            border: solid 2px #C3C3C3FF  ;
+            border-radius: 3px;
+            padding: 5px 5px 88px 10px ;
+        }
+
+        .body_hobbies{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .film{
+            flex-basis: 20%;
+            margin-top: 40px;
+
+        }
+        .readbook{
+            flex-basis: 20%;
+            margin-top: 40px;
+
+        }
+
+        .camera{
+            flex-basis: 20%;
+            margin-top: 40px;
+        }
+        .gamer{
+            flex-basis: 20%;
+            margin-top: 40px;
+        }
+        .football{
+            flex-basis: 20%;
+            margin-top: 40px;
+        }
+        .icon_image_app{
+            color: #D58F15FF ;
+            font-size: 5em;
+            margin: 20px 25px 30px 27px ;
+        }
+        .icon_image_app_gamer{
+            color: #D58F15FF ;
+            font-size: 5em;
+            margin: 20px 25px 30px 15px ;
+        }
+    </style>
+
 </head>
+
 <body>
-<div id=" header ">
+
+<div class=" container">
+    <div class="header" >
+        <div class=" header_name">
+            <div class="avatar ">
+                <img src="img/avatar.jpg" alt="mypicture_Any">
+            </div>
+             <span style="font-size: 1rem; color: white ; font-weight: normal ;"  >Phạm Trần Tuấn Anh </span>
+            <br>
+             <span style=" font-size: 0.8rem;color: white">Software Engineer</span>
+        </div>
+
+        <div class=" header_contact">
+            <div class="title_contact">
+                <span>Contact</span>
+            </div>
+            <ul class="inf_title_contact">
+                <li class="contact_line"> 21130004@st.hcmuaf.edu.vn</li>
+                <li class="contact_line"> +84374709550</li>
+                <li class="contact_line"> $Quận 12, TP HCM</li>
+            </ul>
+
+        </div>
+
+        <div class="header_follow">
+            <div class="title_follow">
+                <span> Follow </span>
+            </div>
+            <div class="header_icon_follow">
+                
+                <a href="https://www.facebook.com/tuanany.pham/">
+                    <div class="header_icon_follow-facebook">
+                        <i style="margin:4px;" class="fa-brands fa-facebook"></i></div>
+                </a>
+
+                <a href="https://www.instagram.com/songt_any/">
+                    <div class="header_icon_follow-instagram">
+                        <i style="margin:5px;" class="fa-brands fa-instagram"></i> </div>
+                </a>
+
+                <a href="https://www.tiktok.com/@anyxemfacebook">
+                    <div class="header_icon_follow-tiktok">
+                        <i style="margin: 5px" class="fa-brands fa-tiktok"></i></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="header_visit">
+            <div class="header_icon_visit">
+                <a href="https://github.com/AnyPham">
+                    <div class="header_visit_icon-github"><i class="fa-brands fa-github"></i></div>
+                </a>
+                <div>
+                    <span style="color:#FFF; margin: 0px 30px 0px -20px">Theo dõi github</span>
+                    <br>
+                    <span style="color:#FFF; margin: 0px 50px 0px 0px"> của tôi</span>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="body_design">
+
+        <div class="body_left_design">
+            <div class="infomation">
+                <div class="inf_a">- HELLO ,</div>
+                <div class="inf_b"> I am Pham Tran Tuan Anh,
+                    a software development expert with 2 years of experience.
+                    I am passionate about creativity and problem solving through technology.
+                    Patience, meticulousness and attention to detail are qualities I bring to every project.
+                    With the ability to work effectively both in a team and independently</div>
+                <br>
+                <div class="inf_c"> I am always willing to participate in new challenges
+                    to develop and bring value to the organization</div>
+            </div>
+
+            <div class="My_specialties">
+                <h3 style="margin-left: 20px">    My specialties  </h3>
+                <div class="line"></div>
+
+                <div class="My_specialties_icon">
+
+                    <div class="java">
+                        <div class="icon_image">
+                            <div class="icon_image_java"> <i class="fa-brands fa-java"></i></div>
+
+                        </div>
+                        <div class="line_icon"></div>
+                        <span style="font-weight: 600; margin-left: 45px;">Java</span>
+
+                    </div>
+
+                    <div class="html">
+                        <div class="icon_image">
+                            <div class="icon_image_html"><i class="fa-brands fa-html5"></i></div>
+                        </div>
+                        <div class="line_icon"></div>
+                        <span style="font-weight: 600; margin-left: 45px;">HTML</span>
+                    </div>
+
+                    <div class="nodejs">
+                        <div class="icon_image">
+                            <div class="icon_image_nodejs"><i class="fa-brands fa-node"></i></div>
+                        </div>
+                        <div class="line_icon"></div>
+                        <span style="font-weight: 600; margin-left: 36px;">NodeJS</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="body_right_design">
+            <div class="education">
+                <h3 style="margin-left: 20px;"> Education</h3>
+                <div class="line"></div>
+
+                <ul class="education_list">
+                    <li class="education_text"> Trường tiểu học Hà Huy Giáp</li>
+                    <div class="education_text_line">
+                        <div class="line_decor"></div>
+                        <span class="address"> 872, Hà Huy Giáp, Thạnh Lộc, Quận 12, Thành phố Hồ Chí Minh</span>
+                    </div>
+
+                    <li class="education_text"> Trung học cơ sở Trần Hưng Đạo</li>
+                    <div class="education_text_line ">
+                        <div class="line_decor"></div>
+                        <span class="address">2 Đường TL 29, Thạnh Lộc, Quận 12, Thành phố Hồ Chí Minh</span>
+                    </div>
+
+                    <li class="education_text">Trung học phổ thông Nguyễn Trung Trực</li>
+                    <div class="education_text_line ">
+                        <div class="line_decor"></div>
+                        <span class="address">168 Đ. Lê Đức Thọ, Phường 15, Gò Vấp, Thành phố Hồ Chí Minh</span>
+                    </div>
+
+                    <li class="education_text" > Trường đại học Nông Lâm TPHCM</li>
+                    <span class="address">Phường Linh Trung, Thủ Đức, Thành phố Hồ Chí Minh</span>
+                </ul>
+
+                <h3 style="margin: 35px 0px 0px 20px ;"> Experiance</h3>
+                <div class="line"></div>
+
+                <ul class="education_list">
+                    <li class="education_text">Green Shop</li>
+                    <div class="education_text_line " >
+                        <div class="line_decor"></div>
+                        <span class="address"> Web cây trồng cảnh</span>
+                    </div>
+
+                    <li class="education_text"> Nghiên Cứu khoa học</li>
+                    <div class="education_text_line ">
+                        <div class="line_decor"></div>
+                        <span class="address"> Ứng dụng theo dõi quản lý sâu bệnh bằng AI</span>
+                    </div>
+
+                    <li class="education_text">AI Game</li>
+                    <div class="education_text_line ">
+                        <div class="line_decor"></div>
+                        <span class="address"> AI Chess</span>
+                    </div>
+
+                    <li class="education_text"> Physics</li>
+                    <div class="education_text_line ">
+                        <div class="line_decor"></div>
+                        <span class="address"> Tên lửa nước</span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="creative_and_software_skills">
+        <div class="creative">
+            <h3 style="margin-left: 20px"> Creative Skills</h3>
+            <div class="line_skills"></div>
+            <div class="creative_body">
+
+                <div class="body_letf_build_skills">
+                    <div class="line_x_top"></div>
+                    <div class="line_y_top"></div>
+                    <div class="text1"> WHAT CAN I DO</div>
+                    <div class="line_x_under"></div>
+                    <div class="line_y_under"></div>
+                </div>
+
+                <div class="skills_list">
+                    <ul class="list_text_1">
+                        <li class="skills_text">Xây dưng web</li>
+                        <br>
+                        <li class="skills_text">Thiết kế web</li>
+                        <br>
+                        <li class="skills_text">Lập trình frontend</li>
+                        <br>
+                        <li class="skills_text">AI</li>
+                        <br>
+                        <li class="skills_text">DataBase</li>
+                        <br>
+                    </ul>
+                </div>
+
+                <div class="body_right_build_skills">
+                    <div class="line_x_top1"></div>
+                    <div class="line_y_top1"></div>
+                    <div class="text2"> DESING SKILLS</div>
+                    <div class="line_x_under1"></div>
+                    <div class="line_y_under1"></div>
+                </div>
+
+                <div class="skills_list">
+                    <ul class="list_text_2">
+                        <li class="skills_test">Planning & Strategy</li>
+                        <br>
+                        <li class="skills_test">Digital Art</li>
+                        <br>
+                        <li class="skills_test">Color Senso</li>
+                        <br>
+                        <li class="skills_test">Layout-Grid</li>
+                        <br>
+                        <li class="skills_test">Photography</li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="software">
+            <h3 style="margin-left: 20px"> SOFTWARE SKILLS</h3>
+            <div class="line_skills1"></div>
+
+            <div class="software_body">
+                <div class=" logo_app">
+<!--                    <img src="icon/adobe-photoshop.png" alt="Ps">-->
+<!--                    <img src="icon/adobe-illustrator.png" alt="Ai">-->
+<!--                    <img src="icon/adobe-indesign.png" alt="Id">-->
+<!--                    <img src="icon/after-effects.png" alt="Ae">-->
+<!--                    <img src="icon/premiere.png" alt="Pr">-->
+                    <div class="app_img" >
+                        <img src="icon/adobe-photoshop.png" alt="Ps">
+                        <span class="text_App"> Photoshop</span>
+                        <div style="margin-right:80px; " class="point">
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="app_img" >
+                        <img src="icon/adobe-illustrator.png" alt="Ai">
+                        <span class="text_App"> Illustrator</span>
+                        <div style="margin-right:80px; margin-left: 9px " class="point">
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="app_img" >
+                        <img src="icon/adobe-indesign.png" alt="Id">
+                        <span class="text_App"> Indesign</span>
+                        <div style="margin-right:80px; margin-left: 17px " class="point">
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="app_img" >
+                        <img src="icon/after-effects.png" alt="Ae">
+                        <span class="text_App"> Effects</span>
+                        <div style="margin-right:80px; margin-left: 29px " class="point">
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px" class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_color"><i class="fa-solid fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                            <div style="margin: 5px"class="point_none_color"><i class="fa-regular fa-circle"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="hobbies_internet">
+        <h3 style="margin-left: 20px;"> HOBBIES & INTERNET</h3>
+        <div class="body_hobbies">
+
+            <div class="film">
+                <div class="icon_image">
+                    <div class="icon_image_app"><i class="fa-solid fa-film"></i></div>
+                </div>
+                     <span  style="font-weight: 600; margin-left: 50px;"  >film </span>
+            </div>
+
+            <div class="readbook">
+                <div class="icon_image">
+                    <div class="icon_image_app"><i class="fa-solid fa-book"></i></div>
+                </div>
+                <span  style="font-weight: 600; margin-left: 45px;">Book </span>
+            </div>
+
+            <div class="camera">
+                <div class="icon_image">
+                    <div class="icon_image_app"><i class="fa-solid fa-camera"></i></div>
+                </div>
+                <span  style="font-weight: 600; margin-left: 36px;">camera </span>
+            </div>
+
+            <div class="gamer">
+                <div class="icon_image">
+                    <div class="icon_image_app_gamer"><i class="fa-solid fa-gamepad"></i></div>
+                </div>
+                <span  style="font-weight: 600; margin-left: 36px;">Game </span>
+            </div>
+
+            <div class="football">
+                <div class="icon_image">
+                    <div class="icon_image_app"><i class="fa-regular fa-futbol"></i></div>
+                </div>
+                <span  style="font-weight: 600; margin-left: 36px;">Football </span>
+            </div>
+
+
+<!--            <div class="readbook"><i class="fa-solid fa-book"></i></div>-->
+<!--            <div class="camera"><i class="fa-solid fa-camera"></i></div>-->
+<!--            <div class="gamer"><i class="fa-solid fa-gamepad"></i></div>-->
+<!--            <div class="football"><i class="fa-regular fa-futbol"></i></div>-->
+
+
+
+
+        </div>
+    </div>
 
 </div>
-
-<div id="page_body">
-
-</div>
-
 
 </body>
 </html>
